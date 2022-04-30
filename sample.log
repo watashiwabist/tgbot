@@ -1,0 +1,937 @@
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-99' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=MessageTextIsEmpty('Message text is empty')>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\admin_function.py", line 141, in set_data_product
+    await call.message.answer(data_text, reply_markup=await del_items(product_id))
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\types\message.py", line 388, in answer
+    return await self.bot.send_message(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\bot\bot.py", line 334, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\bot\base.py", line 231, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageTextIsEmpty: Message text is empty
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-107' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AuthenticationError(<Response [401]>, 'authentication_error', 'invalid api key', [{'id': 'authentication_error', 'message': 'invalid api key'}])>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\admin_menu.py", line 56, in admin_transaction
+    user_id = client.get_accounts()[0]['id']
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\coinbase\wallet\client.py", line 237, in get_accounts
+    response = self._get('v2', 'accounts', params=params)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\coinbase\wallet\client.py", line 129, in _get
+    return self._request('get', *args, **kwargs)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\coinbase\wallet\client.py", line 116, in _request
+    return self._handle_response(response)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\coinbase\wallet\client.py", line 125, in _handle_response
+    raise build_api_error(response)
+coinbase.wallet.error.AuthenticationError: APIError(id=authentication_error): invalid api key
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("'<' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 246, in add_product_price
+    if int(msg.text < 300):
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 246, in add_product_price
+    if int(msg.text < 300):
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 246, in add_product_price
+    if int(msg.text < 300):
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 239, in user_insert
+    if 'QIWI' in call.data:
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 239, in user_insert
+    if 'QIWI' in call.data:
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1590, in _pydevd_bundle.pydevd_cython_win32_310_64.ThreadTracer.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 930, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 921, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 244, in user_insert
+    try:
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 244, in user_insert
+    try:
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1590, in _pydevd_bundle.pydevd_cython_win32_310_64.ThreadTracer.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 930, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 921, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Bot.send_message() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 253, in user_insert
+    sum = get_btc_price(sum)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 240, in get_btc_price
+    bitprice = int((r.json()['RUB']['buy']))
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] : 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 257, in user_insert
+    await bot.send_message('В данный момент выбранный способ пополнения недоступен')
+TypeError: Bot.send_message() missing 1 required positional argument: 'text'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 256, in user_insert
+    except:
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 256, in user_insert
+    except:
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Bot.send_message() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 252, in user_insert
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 258, in user_insert
+    await bot.send_message('В данный момент выбранный способ пополнения недоступен')
+TypeError: Bot.send_message() missing 1 required positional argument: 'text'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Bot.send_message() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 252, in user_insert
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 258, in user_insert
+    await bot.send_message('В данный момент выбранный способ пополнения недоступен')
+TypeError: Bot.send_message() missing 1 required positional argument: 'text'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError("Bot.send_message() missing 1 required positional argument: 'text'")>
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 252, in user_insert
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 258, in user_insert
+    await call.bot.send_message('В данный момент выбранный способ пополнения недоступен')
+TypeError: Bot.send_message() missing 1 required positional argument: 'text'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 264, in user_insert
+    print('abbao')
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 264, in user_insert
+    print('abbao')
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 268, in user_insert
+    await call.message.answer('В данный момент выбранный способ пополнения недоступен')
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 268, in user_insert
+    await call.message.answer('В данный момент выбранный способ пополнения недоступен')
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 268, in user_insert
+    await call.message.answer('В данный момент выбранный способ пополнения недоступен')
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 268, in user_insert
+    await call.message.answer('В данный момент выбранный способ пополнения недоступен')
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 268, in user_insert
+    reply_markup=await payment_info(url, bill_id))
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 268, in user_insert
+    reply_markup=await payment_info(url, bill_id))
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2173, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 2164, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1476, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/thesm/Desktop/bt/main.py", line 11, in <module>
+    executor.start_polling(dp)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 45, in start_polling
+    executor.start_polling(
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 328, in start_polling
+    loop.run_until_complete(self._shutdown_polling())
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 628, in run_until_complete
+    self.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\utils\executor.py", line 323, in start_polling
+    loop.run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 595, in run_forever
+    self._run_once()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1881, in _run_once
+    handle._run()
+  File "C:\Users\thesm\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\thesm\Desktop\bt\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 270, in user_insert
+    await call.message.answer('В данный момент выбранный способ пополнения недоступен')
+  File "C:\Users\thesm\Desktop\bt\handlers\user_function.py", line 270, in user_insert
+    await call.message.answer('В данный момент выбранный способ пополнения недоступен')
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1180, in _pydevd_bundle.pydevd_cython_win32_310_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 621, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1096, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 1058, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle\pydevd_cython_win32_310_64.pyx", line 318, in _pydevd_bundle.pydevd_cython_win32_310_64.PyDBFrame.do_wait_suspend
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1147, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\plugins\python-ce\helpers\pydev\pydevd.py", line 1162, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: pocketHydraBot [@pocketHydraBot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!

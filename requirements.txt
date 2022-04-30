@@ -1,0 +1,4 @@
+aiogram==2.14.3
+coinbase==2.1.0
+pyqiwip2p
+forex-python
